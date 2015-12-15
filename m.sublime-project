@@ -1,0 +1,32 @@
+{
+  "folders":
+  [
+    {
+      "path": ".",
+      "folder_exclude_patterns":
+      [
+        "bower_components",
+        "node_modules",
+        "build",
+        "dist",
+        ".tmp",
+        "log",
+      ],
+      "file_exclude_patterns":
+      [
+        "tags",
+        ".tags"
+      ]
+    }
+  ],
+  "settings":
+  {
+    "word_wrap": false,
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
+  },
+  "syntax_override": {
+    "\\.js$": [ "JavaScript (Babel)" ]
+  }
+}
