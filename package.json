@@ -4,7 +4,9 @@
   "description": "react simple start kit with hello world",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development node --harmony tools/server"
+    "dev": "NODE_ENV=development node --harmony tools/server",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js -p",
+    "sandbox": "NODE_ENV=sandbox node_modules/webpack/bin/webpack.js -p"
   },
   "repository": {
     "type": "git",
