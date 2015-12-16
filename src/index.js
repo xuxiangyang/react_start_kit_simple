@@ -1,5 +1,5 @@
-require('babel-polyfill') // ECMA6仿真
-//require("bootstrap-webpack"); //引入了bootstrap
+require('babel-polyfill'); // ECMA6仿真
+require("bootstrap-webpack"); //引入了bootstrap
 import React from "react"
 import ReactDOM from 'react-dom';
 
