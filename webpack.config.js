@@ -21,6 +21,7 @@ process = require("process")
     plugins: [
       new HtmlWebpackPlugin({
         template: "src/index.html",
+        favicon: "src/vendor/favicon.ico",
         inject: "body"
       }),
       new webpack.DefinePlugin({
