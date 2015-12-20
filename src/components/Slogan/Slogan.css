@@ -1,0 +1,15 @@
+.Slogan {
+    width: 100%;
+}
+
+.Slogan .Slogan-title {
+    text-align: center;
+    font-size: 24px;
+    color: #666666;
+}
+
+.Slogan .Slogan-content {
+    color: #808080;
+    font-size: 16px;
+    text-indent: 32px;
+}
