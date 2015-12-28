@@ -18,9 +18,6 @@ function mapStateToProps(state) {
 
 
 class HelloWorldPage extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="page HelloWorldPage" onClick={this.increaseCount.bind(this)}>
