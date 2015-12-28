@@ -19,6 +19,36 @@ const store = compose(
   reduxReactRouter({ createHistory: createBrowserHistory })
 )(createStore)(App);
 
+var backStack = [() => { MTX.doClose(); }];
+window.backStack = backStack;
+
+MTX.goBackAction = function() {
+  backStack.push(() => { store.history.goBack() })
+}
+
+MTX.doCloseAction = function() {
+  backStack.push(() => { MTX.doClose() })
+}
+
+MTX.doConfig({
+  navBar: {
+    left: { func: "funcBack" }
+  }
+});
+
+MTX.navbarLeftButtonEvent = function() {
+  backStack.pop()();
+}
+
+window.onbeforeunload = function() {
+  MTX.doConfig({
+    navBar: {
+      left: { func: "funcClose" }
+    }
+  });
+}
+
+
 
 ReactDOM.render(
   <Provider store={store}>

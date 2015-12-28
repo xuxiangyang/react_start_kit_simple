@@ -17,8 +17,11 @@ function mapStateToProps(state) {
   };
 }
 
-
 class HelloWorldPage extends Component {
+  componentDidMount() {
+    MTX.goBackAction()
+  }
+
   render() {
     return (
       <div className="page HelloWorldPage" >
